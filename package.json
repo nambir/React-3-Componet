@@ -1,0 +1,25 @@
+{
+  "name": "mynodeapp1",
+  "version": "1.0.0",
+  "description": "my first node application",
+  "main": "index.js",
+  "scripts": {
+    "start_old_nowatchforserver": "node server/server.js",
+    "start": "nodemon -w server server/server.js",
+    "compile": "npx babel src --presets @babel/react --out-dir public",
+    "watch": "babel src --presets @babel/react --out-dir public --watch --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nambi",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "express": "^4.17.1"
+  }
+}
